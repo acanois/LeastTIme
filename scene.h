@@ -18,6 +18,12 @@ public:
 
     void draw();
 
+    static float angleToRads(float angle);
+
+    void setPositionToOverhead();
+
+    void updateOrbitalCamera(float angle, float radius);
+
 private:
     Camera m_camera { 0 };
     static constexpr int m_width { 1280 };
